@@ -1,0 +1,67 @@
+{
+  "name": "paper-kit-react",
+  "version": "1.2.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/data-grid": "^4.0.0-alpha.19",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@react-pdf/font": "^2.0.0-beta.11",
+    "@react-pdf/renderer": "^1.6.13",
+    "@truffle/hdwallet-provider": "^1.2.2",
+    "classnames": "2.2.6",
+    "material-table": "^1.69.2",
+    "moment": "2.26.0",
+    "node-sass": "4.14.1",
+    "nouislider": "14.5.0",
+    "qrcode-svg": "^1.1.0",
+    "qrcode.react": "^1.0.1",
+    "react": "16.13.1",
+    "react-base64-downloader": "^2.1.6",
+    "react-bootstrap": "^1.4.3",
+    "react-bootstrap-switch": "15.5.3",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "^4.0.2",
+    "reactstrap": "8.4.1",
+    "web-vitals": "^1.1.0",
+    "web3": "1.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp licenses",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css",
+    "minify-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/paper-kit.scss src/assets/css/paper-kit.css --source-map true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "typescript": "3.9.5"
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8"
+  }
+}
